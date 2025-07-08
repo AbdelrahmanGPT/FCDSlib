@@ -1563,4 +1563,9 @@ public class StringsM {
         
         return DuplicatedString.substring(0, DuplicatedString.length() - 1) ;
     }
+    
+    public static int DigitCharacterToNumber(char CharacterDigit)
+    {
+        return CharacterDigit - '0' ;
+    }
 }
