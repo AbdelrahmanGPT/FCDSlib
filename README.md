@@ -21,6 +21,8 @@ To address this challenge, I developed **FCDSlib** to make software development 
 - 🚀 **30% faster development** by reducing repetitive coding tasks  
 - 🧩 Modular and reusable architecture for academic projects  
 - 🧠 Designed for learning + practical software development  
+- ⚡ All methods are fully optimized for performance and efficiency  
+- 🛡️ Comprehensive exception handling across all modules  
 - 🛠️ Clean, structured, and maintainable codebase  
 
 ---
@@ -76,7 +78,9 @@ Unlike traditional utility libraries, FCDSlib is:
 - Built **independently from scratch**
 - Designed specifically for **academic software development**
 - Structured as both a **learning tool and productivity framework**
-- Focused on improving real developer experience for students
+- ⚡ Fully optimized for performance
+- 🛡️ Designed with robust exception handling in all modules
+- Focused on improving real developer experience for students  
 
 ---
 
