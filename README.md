@@ -2,28 +2,34 @@
 
 ## 📌 Overview
 
-**FCDSlib - Modular Java Development Framework** is a custom-built **Object-Oriented Java framework** designed to simplify software development for university students.
+**FCDSlib - Modular Java Development Framework** is a custom-built **Object-Oriented Java utility framework** designed to simplify software development for university students.
 
-It provides reusable, high-level utility classes that reduce boilerplate code and allow students to focus on problem-solving, software design, and core computer science concepts instead of repetitive implementation details.
+It provides reusable, modular, and high-level utility classes that reduce boilerplate code and allow students to focus on problem-solving, software design, and core computer science concepts instead of repetitive low-level implementation.
 
 ---
 
 ## 💡 Motivation
 
-Many students struggle when developing software projects in Java due to repetitive low-level implementation, large boilerplate code, and lack of reusable abstractions.
+Many students face difficulty when building Java applications due to repetitive implementation of common operations such as arrays, matrices, strings, file handling, and GUI components.
 
-To solve this, I designed **FCDSlib** as a modular framework that improves productivity, readability, and maintainability while enforcing strong software engineering design principles.
+To solve this, I designed **FCDSlib** as a structured framework that improves:
+- productivity  
+- code readability  
+- maintainability  
+- reusability  
+
+It transforms Java development into a more efficient and structured experience using reusable OOP-based modules.
 
 ---
 
 ## ⚙️ Key Features
 
-- 🚀 **30% faster development** by reducing repetitive implementation  
-- 🧩 Modular reusable architecture for academic projects  
-- 🧠 Designed for learning + real software engineering practice  
-- ⚡ Fully optimized methods for performance and efficiency  
+- 🚀 **30% faster development** by reducing repetitive coding tasks  
+- 🧩 Fully modular architecture with reusable components  
+- 🧠 Designed for both learning and real software development  
+- ⚡ Optimized implementations for performance efficiency  
 - 🛡️ Robust exception handling across all modules  
-- 🏗️ Built using **Object-Oriented Design principles**  
+- 🏗️ Clean object-oriented architecture with strong separation of concerns  
 
 ---
 
@@ -32,88 +38,106 @@ To solve this, I designed **FCDSlib** as a modular framework that improves produ
 FCDSlib is designed using **all 5 SOLID principles**, ensuring scalability, maintainability, and clean architecture:
 
 ### 🧩 1. Single Responsibility Principle (SRP)
-Each class in the framework has one clear responsibility.  
-For example:
-- Array utilities handle only array operations  
-- File utilities handle only file operations  
-- String utilities handle only string processing  
+Each class is designed to handle one specific responsibility.
+
+Examples from the framework:
+- `ArrayM` → array operations only  
+- `MatrixM` → matrix operations only  
+- `StringsM` → string manipulation only  
+- `FilesM` → file handling only  
+- `GUI` → graphical utilities only  
 
 ---
 
 ### 🔓 2. Open/Closed Principle (OCP)
-The system is designed to be **open for extension but closed for modification**.  
-New functionality can be added by introducing new classes without modifying existing stable code.
+The framework is designed to be **open for extension but closed for modification**.
+
+New functionality can be added by introducing new modules (classes) like:
+- new data structure utilities  
+- new mathematical utilities  
+- new file processing features  
+
+without modifying existing stable classes.
 
 ---
 
 ### 🔄 3. Liskov Substitution Principle (LSP)
-Derived classes (where inheritance is used) can replace base classes without affecting program correctness, ensuring consistent behavior across the framework.
+Where inheritance is applied, derived classes can safely replace base classes without affecting program behavior, ensuring consistent and predictable functionality across modules.
 
 ---
 
 ### 🔌 4. Interface Segregation Principle (ISP)
-Interfaces are kept **small, focused, and task-specific**, preventing classes from depending on unnecessary methods they do not use.
+The system avoids large monolithic interfaces by splitting functionality into focused modules such as:
+- `Read` → input handling only  
+- `Utility` → helper functions only  
+- `Format` → formatting utilities only  
+
+Each module depends only on the functionality it actually needs.
 
 ---
 
 ### 🧠 5. Dependency Inversion Principle (DIP)
-High-level modules depend on **abstractions rather than concrete implementations**, improving flexibility and reducing tight coupling between components.
+High-level modules depend on abstractions rather than low-level implementation details.
+
+This is achieved through:
+- modular utility design  
+- reusable service-style classes  
+- separation between logic and implementation  
 
 ---
 
 ## 📚 Modules Included
 
 ### 📊 Data Structures
-- Arrays Utilities  
-- Matrices Operations  
-- ArrayLists & 2D ArrayLists  
-
-### 📐 Mathematical Structures
-- Vectors & 2D Vectors  
+- `ArrayM`
+- `ArrayListM`
+- `MatrixM`
+- `MatrixListM`
+- `VectorM`
+- `Vector2DM`
 
 ### 📝 Text Processing
-- Strings & Characters utilities  
-
-### 🎨 Console Utilities
-- Formatting (text styling & shapes in console)  
+- `StringsM`
 
 ### 📂 File Handling
-- File creation, reading, writing, and management  
-
-### ⏰ Time & Date
-- Time utilities  
-- Date utilities  
+- `FilesM`
+- `Read`
 
 ### 🔒 Security
-- Encryption & Decryption utilities (custom implementation)  
+- `Encryption_Decryption`
+
+### 🎨 Console Utilities
+- `Format`
 
 ### 🖥️ GUI Support
-- Swing utilities  
-- JavaFX utilities  
+- `GUI`
 
 ### ⚡ System Control
-- Start & Exit lifecycle management  
+- `StartExit`
+
+### 🧰 Core Utilities
+- `Utility`
 
 ---
 
 ## 📈 Impact
 
-- 👨‍🎓 Adopted by **100+ students** for academic projects  
-- ⚡ Improved productivity and significantly reduced development time  
-- 🧩 Enhanced understanding of object-oriented design principles  
-- 🏗️ Strengthened real-world software engineering thinking  
-- 🧠 Helped students transition from basic OOP to structured system design  
+- 👨‍🎓 Used by **100+ students** in academic projects  
+- ⚡ Reduced repetitive coding and development time significantly  
+- 🧩 Improved understanding of OOP design and modular programming  
+- 🏗️ Helped students transition from basic Java to structured software design  
+- 🧠 Encouraged clean architecture thinking in early-stage developers  
 
 ---
 
 ## 🧠 What Makes This Special
 
 - Built **fully using Object-Oriented Programming (Java)**
-- Designed with **complete SOLID principles implementation**
-- Focused on **real academic software development use cases**
-- Highly modular and reusable architecture
-- Improves both **learning experience + productivity**
-- Bridges the gap between **academic code and real-world design**
+- Designed as a **modular development framework, not just a utility library**
+- Real-world reusable components for academic software projects
+- Strong separation of concerns across all modules
+- Clean, scalable, and maintainable architecture
+- Implements **all SOLID principles in practical OOP form**
 
 ---
 
@@ -122,7 +146,7 @@ High-level modules depend on **abstractions rather than concrete implementations
 - Java  
 - Object-Oriented Programming (OOP)  
 - Object-Oriented Design (OOD)  
-- SOLID Principles  
+- SOLID Principles (SRP, OCP, LSP, ISP, DIP)  
 
 ---
 
@@ -136,4 +160,4 @@ Competitive Programmer & Software Developer
 
 ## ⭐ Vision
 
-To simplify software development for students while teaching them how to design clean, scalable, and maintainable systems using professional software engineering principles.
+To simplify software development for students by providing reusable, well-structured, and scalable Java components that encourage clean architecture and strong programming fundamentals.
